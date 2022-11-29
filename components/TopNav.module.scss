@@ -1,0 +1,30 @@
+.navContainer {
+	padding: 50px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navMenu {
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 1rem;
+	}
+
+	a:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.searchBox {
+	padding: 15px 20px;
+	border: 1px solid gray;
+	border-radius: 10px;
+
+	input[type="text"] {
+		border: none;
+		outline: none;
+		font-size: 1rem;
+	}
+}
