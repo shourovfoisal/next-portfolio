@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import logo from "../public/logo.png";
+import logo from "../public/logo-original.png";
 import styles from "./TopNav.module.scss";
 import { IoSearch } from "react-icons/io5";
 
@@ -58,7 +58,7 @@ const TopNav = () => {
 			<div className={styles.searchBox}>
 				<input
 					type="text"
-					placeholder="Search something."
+					placeholder="Search"
 				/>
 				<IoSearch
 					style={{ cursor: "pointer", color: "#22b14c", fontSize: "22px" }}
