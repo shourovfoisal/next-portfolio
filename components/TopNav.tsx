@@ -25,12 +25,11 @@ const TopNav = () => {
 	return (
 		<div className={styles.navContainer}>
 			<div className="logo">
-				<Link href="/">
-					<Image
-						src={logo}
-						height={80}
-						alt=""
-					/>
+				<Link
+					href="/"
+					className={styles.logo}
+				>
+					Shourov Foisal
 				</Link>
 			</div>
 

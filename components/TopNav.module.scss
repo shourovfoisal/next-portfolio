@@ -7,6 +7,14 @@
 	align-items: center;
 }
 
+.logo {
+	font-family: "Caveat", cursive;
+	font-weight: bold;
+	color: $themeColor;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
 .navMenu {
 	a {
 		text-decoration: none;
