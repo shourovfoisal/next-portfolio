@@ -8,15 +8,18 @@
 }
 
 input {
-	caret-color: $textColor;
+	caret-color: $grayColor;
 }
 
 ::placeholder {
-	color: $textColor;
+	color: $grayColor;
 }
 
 body {
+	min-height: 100vh;
 	font-family: Roboto, sans-serif;
-	color: $textColor;
-	background-color: beige;
+	color: $grayColor;
+	// background-color: $themeColorSubtle;
+	// background-color: aliceblue;
+	// background-color: beige;
 }

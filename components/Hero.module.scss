@@ -1,0 +1,39 @@
+@import "../styles/variables";
+
+.heroContainer {
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.heroImageBoxContainer {
+	width: 17%;
+	height: 700px;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		background-color: $themeColorLight;
+		z-index: -1;
+		top: 15px;
+		left: 15px;
+		border-radius: 10px;
+	}
+}
+
+.heroImageContainer {
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	border-radius: 10px;
+
+	img {
+		width: 150%;
+		height: 100%;
+		object-fit: cover;
+		object-position: top center;
+	}
+}

@@ -15,6 +15,7 @@ const TopNav = () => {
 		if (router.pathname === "/") setLink(1);
 		if (router.pathname === "/about") setLink(2);
 		if (router.pathname === "/contact") setLink(3);
+		if (router.pathname === "/hire-me") setLink(4);
 	}, [router.pathname]);
 
 	const activeLinkStyles = {
@@ -51,6 +52,13 @@ const TopNav = () => {
 					style={link === 3 ? activeLinkStyles : {}}
 				>
 					Contact
+				</Link>
+				<Link
+					href="/hire-me"
+					style={{ color: "white" }}
+					className={styles.heroLink}
+				>
+					Hire Me
 				</Link>
 			</div>
 
