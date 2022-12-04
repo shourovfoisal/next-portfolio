@@ -10,6 +10,7 @@ const Hero = () => {
 					<Image
 						src={myImage}
 						alt=""
+						priority
 					/>
 				</div>
 			</div>

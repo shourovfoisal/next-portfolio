@@ -26,31 +26,19 @@ const TopNav = () => {
 	return (
 		<div className={styles.navContainer}>
 			<div className="logo">
-				<Link
-					href="/"
-					className={styles.logo}
-				>
+				<Link href="/" className={styles.logo}>
 					Shourov Foisal
 				</Link>
 			</div>
 
 			<div className={styles.navMenu}>
-				<Link
-					href="/"
-					style={link === 1 ? activeLinkStyles : {}}
-				>
+				<Link href="/" style={link === 1 ? activeLinkStyles : {}}>
 					Home
 				</Link>
-				<Link
-					href="/about"
-					style={link === 2 ? activeLinkStyles : {}}
-				>
+				<Link href="/about" style={link === 2 ? activeLinkStyles : {}}>
 					About
 				</Link>
-				<Link
-					href="/contact"
-					style={link === 3 ? activeLinkStyles : {}}
-				>
+				<Link href="/contact" style={link === 3 ? activeLinkStyles : {}}>
 					Contact
 				</Link>
 				<Link
@@ -62,14 +50,17 @@ const TopNav = () => {
 				</Link>
 			</div>
 
-			<div className={styles.searchBox}>
-				<input
-					type="text"
-					placeholder="Search"
-				/>
-				<IoSearch
-					style={{ cursor: "pointer", color: "#22b14c", fontSize: "22px" }}
-				/>
+			<div className={styles.searchBoxContainer}>
+				<div className={styles.searchBox}>
+					<div className={styles.searchInputContainer}>
+						<input type="text" placeholder="Search" />
+					</div>
+					<div className={styles.searchIconContainer}>
+						<IoSearch
+							style={{ cursor: "pointer", color: "#22b14c", fontSize: "22px" }}
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

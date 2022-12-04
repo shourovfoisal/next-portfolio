@@ -2,9 +2,12 @@
 
 .navContainer {
 	padding: 50px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+	display: grid;
+	// grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .logo {
@@ -16,7 +19,13 @@
 }
 
 .navMenu {
+	display: flex;
+	// grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	justify-content: center;
+	align-items: center;
+
 	a {
+		min-width: max-content;
 		text-decoration: none;
 		color: $grayColor;
 		font-size: 1rem;
@@ -40,23 +49,40 @@
 	}
 }
 
+.searchBoxContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .searchBox {
+	width: 50%;
 	padding: 15px 20px;
 	border: 1px solid $grayColorSubtle;
 	border-radius: 10px;
-	display: flex;
-	align-items: center;
+	position: relative;
 
-	// &:hover {
-	// 	border: 1px solid $themeColor;
-	// }
+	&:hover {
+		border: 1px solid $themeColor;
+	}
 
 	input[type="text"] {
+		width: 100%;
+		padding-right: 20px;
 		border: none;
 		outline: none;
 		font-size: 1rem;
 		color: $grayColor;
 		background-color: transparent;
-		padding-right: 10px;
 	}
+}
+
+.searchInputContainer {
+	width: 100%;
+}
+
+.searchIconContainer {
+	position: absolute;
+	right: 0.8rem;
+	top: 50%;
+	transform: translateY(-50%);
 }
