@@ -20,45 +20,53 @@ const TopNav = () => {
 
 	const activeLinkStyles = {
 		color: "#22b14c",
-		borderBottom: "2px solid #22b14c",
+		fontWeight: "700",
+		borderBottom: "4px solid #22b14c",
 	};
 
 	return (
-		<div className={styles.navContainer}>
-			<div className="logo">
-				<Link href="/" className={styles.logo}>
-					Shourov Foisal
-				</Link>
-			</div>
+		<div className={styles.navWrapper}>
+			<div className={styles.navContainer}>
+				<div className="logo">
+					<Link href="/" className={styles.logo}>
+						Shourov Foisal
+					</Link>
+				</div>
 
-			<div className={styles.navMenu}>
-				<Link href="/" style={link === 1 ? activeLinkStyles : {}}>
-					Home
-				</Link>
-				<Link href="/about" style={link === 2 ? activeLinkStyles : {}}>
-					About
-				</Link>
-				<Link href="/contact" style={link === 3 ? activeLinkStyles : {}}>
-					Contact
-				</Link>
-				<Link
-					href="/hire-me"
-					style={{ color: "white" }}
-					className={styles.heroLink}
-				>
-					Hire Me
-				</Link>
-			</div>
+				<div className={styles.navMenu}>
+					<Link href="/" style={link === 1 ? activeLinkStyles : {}}>
+						Home
+					</Link>
+					<Link href="/about" style={link === 2 ? activeLinkStyles : {}}>
+						About
+					</Link>
+					<Link href="/contact" style={link === 3 ? activeLinkStyles : {}}>
+						Contact
+					</Link>
+					{/* <Link
+						href="/hire-me"
+						style={{ color: "white" }}
+						className={styles.heroLink}
+					>
+						Hire Me
+					</Link> */}
+				</div>
 
-			<div className={styles.searchBoxContainer}>
-				<div className={styles.searchBox}>
-					<div className={styles.searchInputContainer}>
-						<input type="text" placeholder="Search" />
-					</div>
-					<div className={styles.searchIconContainer}>
-						<IoSearch
-							style={{ cursor: "pointer", color: "#22b14c", fontSize: "22px" }}
-						/>
+				<div className={styles.searchBoxContainer}>
+					<div className={styles.searchBox}>
+						<div className={styles.searchInputContainer}>
+							<input type="text" placeholder="Search" />
+						</div>
+						<div className={styles.searchIconContainer}>
+							<IoSearch
+								style={{
+									cursor: "pointer",
+									color: "#22b14c",
+									fontSize: "22px",
+									fontWeight: "bold",
+								}}
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
