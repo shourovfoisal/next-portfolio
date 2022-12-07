@@ -1,9 +1,9 @@
 @import "../styles/variables";
 
 .heroContainer {
-	padding: 50px 100px;
+	padding: 50px 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .heroImageAndText {
@@ -38,7 +38,7 @@
 }
 
 .heroImageBoxContainer {
-	height: 650px;
+	height: 550px;
 	position: relative;
 
 	&::before {
