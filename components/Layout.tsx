@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Hero from "./Hero";
 import TopNav from "./TopNav";
+import styles from "./Layout.module.css";
 
 const Layout = ({ children }: any) => {
 	return (
@@ -11,10 +12,11 @@ const Layout = ({ children }: any) => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<TopNav />
+			<div className={styles.background}></div>
 			<div className="container">
 				<Hero />
-				{children}
 			</div>
+			{children}
 		</>
 	);
 };

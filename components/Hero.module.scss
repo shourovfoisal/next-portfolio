@@ -26,7 +26,7 @@
 		font-size: 60px;
 		color: transparent;
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $themeColor;
+		-webkit-text-stroke-color: $textColor;
 		line-height: 5rem;
 	}
 
@@ -35,7 +35,7 @@
 		margin: 8px 0;
 		-webkit-text-stroke-width: 0;
 		-webkit-text-stroke-color: transparent;
-		color: $themeColor;
+		color: $textColor;
 	}
 }
 

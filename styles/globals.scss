@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "../styles/variables";
 
 * {
@@ -7,18 +10,16 @@
 	box-sizing: border-box;
 }
 
-input {
-	caret-color: $grayColor;
-}
-
-::placeholder {
-	color: $grayColor;
-}
-
 body {
-	min-height: 100vh;
-	font-family: Roboto, sans-serif;
-	color: $grayColor;
+	// min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	// font-family: Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: $textColor;
+	// background-color: #ecf0f1;
+	// background-color: #fdcb6e;
+	// background-color: #fbc531;
+	// background-color: #f1c40f;
 	// background-color: $themeColorSubtle;
 	// background-color: aliceblue;
 	// background-color: #ffdc60;
