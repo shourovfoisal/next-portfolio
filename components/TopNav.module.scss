@@ -7,8 +7,10 @@
 
 .navContainer {
 	width: 1300px;
-	margin: 0 auto;
-	padding: 50px 0;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 3rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
@@ -69,18 +71,23 @@
 
 	input[type="text"] {
 		width: 100%;
-		padding-right: 20px;
 		border: none;
 		outline: none;
+		font-weight: 700;
 		font-size: 1.05rem;
 		color: #fbc531;
 		caret-color: #fbc531;
 		background-color: transparent;
-	}
-	
-	input[type="text"]::placeholder {
-		// font-weight: 700;
-		color: #fbc531;
+		
+		&::placeholder {
+			font-weight: 700;
+			color: #fbc531;
+			transition: opacity 200ms;
+		}
+		
+		&:focus::placeholder {
+			opacity: 0.3;
+		}
 	}
 }
 

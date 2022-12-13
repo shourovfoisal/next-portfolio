@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import Hero from "../components/Hero"
+import styles from "../styles/Home.module.scss"
+
 
 export default function Home() {
 	return (
@@ -8,6 +10,8 @@ export default function Home() {
 			<Head>
 				<title>Home</title>
 			</Head>
+			<div className={styles.background}></div>
+			<Hero />
 		</div>
 	);
 }
