@@ -1,5 +1,5 @@
-import Image from "next/image";
-import myImage from "../public/images/myImage.jpg";
+// import Image from "next/image";
+// import myImage from "../public/images/myImage.jpg";
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
@@ -10,6 +10,11 @@ const Hero = () => {
 					<h1>
 						Shourov <span>Foisal</span>
 					</h1>
+					<p>Full-Stack Web Developer</p>
+					<div className={styles.heroButtons}>
+						<button>View Resume</button>
+						<button>Check My Works</button>
+					</div>
 				</div>
 				{/* <div className={styles.heroImageBoxContainer}>
 					<div className={styles.heroImageContainer}>
