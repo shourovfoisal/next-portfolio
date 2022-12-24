@@ -13,6 +13,7 @@
 	padding: 3rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	z-index: 1;
 }
 
 .logo {
@@ -73,14 +74,14 @@
 		width: 100%;
 		border: none;
 		outline: none;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 1.05rem;
 		color: #fbc531;
 		caret-color: #fbc531;
 		background-color: transparent;
 		
 		&::placeholder {
-			font-weight: 700;
+			font-weight: 600;
 			color: #fbc531;
 			transition: opacity 200ms;
 		}

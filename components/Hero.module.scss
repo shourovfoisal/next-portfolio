@@ -4,23 +4,55 @@
 	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	position: relative;
 }
 
-/*
-.heroImageAndText {
-	display: grid;
-	grid-template-columns: 2fr 3fr;
+.scrollReminder {
+	position: absolute;
+	left: -12rem;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	transform: translateY(-50%);
+	
+	.scrollDashOne {
+		height: 50%;
+		border-left: 1px solid $grayColorSubtle;
+	}
+	
+	.scrollDashTwo {
+		height: 10%;
+		margin-top: 15px;
+		border-left: 1px solid $grayColorSubtle;
+	}
+	
+	.scrollText {
+		cursor: pointer;
+		display: list-item;
+		list-style-type: square;
+		margin-top: 15px;
+		font-size: 0.9rem;
+		font-weight: 600;
+		user-select: none;
+		color: $textColor;
+		writing-mode: vertical-lr;
+		transform: rotateZ(180deg);
+	}
 }
-*/
 
 .heroTextBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
+	width: 60%;
 
 	h1 {
 		font-size: 60px;
-		line-height: 60px;
+		line-height: 70px;
 		text-transform: uppercase;
 	}
 
@@ -33,72 +65,67 @@
 		line-height: 5rem;
 	}
 	
-	p {
+	& > p {
 		margin-top: 15px;
 		font-size: 18px;
 	}
-	
-	/*
-	h1 span:nth-child(3) {
-		font-size: 70px;
-		margin: 8px 0;
-		-webkit-text-stroke-width: 0;
-		-webkit-text-stroke-color: transparent;
-		color: $textColor;
-	}
-	*/
 }
 
 .heroButtons {
 	margin-top: 25px;
 	
-	button {
-		padding: 30px 50px;
-		border: 0;
-		outline: 0;
-		background-color: $themeColor;
-		cursor: pointer;
-		color: $textColor;
-		font-weight: bold;
-		font-family: 'Poppins', sans-serif;
+	a {
+		button {
+			padding: 30px 50px;
+			border: 0;
+			outline: 0;
+			background-color: $themeColor;
+			cursor: pointer;
+			color: $textColor;
+			font-weight: bold;
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		&:last-child {
+			button {
+				margin-left: 50px;
+				padding: 0;
+				background-color: transparent;
+				// border: 3px solid $themeColor;
+				// box-shadow: inset 0 0 0 3px $themeColor;
+				span {
+					margin-left: 5px;
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}
+
+.heroStats {
+	width: 100%;
+	position: absolute;
+	bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+	
+	h2 {
+		font-weight: 400;
+		font-size: 1.3rem;
 	}
 	
-	button:last-child {
-		margin-left: 15px;
-		background-color: transparent;
-		// border: 3px solid $themeColor;
-		box-shadow: inset 0 0 0 3px $themeColor;
+	.singleStats {
+		display: flex;
+		align-items: center;
+		
+		h3 {
+			font-weight: 600;
+			font-size: 15px;
+		}
+		
+		p {
+			font-size: 14px;
+			margin-left: 10px;
+		}
 	}
 }
-
-/* .heroImageBoxContainer {
-	height: 550px;
-	position: relative;
-
-	&::before {
-		position: absolute;
-		content: "";
-		height: 100%;
-		width: 100%;
-		background-color: $themeColorLight;
-		z-index: -1;
-		top: 15px;
-		left: 15px;
-		border-radius: 10px;
-	}
-}
-
-.heroImageContainer {
-	width: 100%;
-	overflow: hidden;
-	height: 100%;
-	border-radius: 10px;
-
-	img {
-		width: 150%;
-		height: 100%;
-		object-fit: cover;
-		object-position: top center;
-	}
-}
-*/
