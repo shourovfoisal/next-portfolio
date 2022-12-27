@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.box {
+    height: 800px;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+    .grid {
+        height: 100%;
+        display: grid;
+        align-items: center;
+	    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        
+        .image {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        
+        .about {
+            
+            display: flex;
+            flex-direction: column;
+            padding-right: 100px;
+            gap: 10px;
+            
+            .heading {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                color: $textColor;
+                font-size: 2rem;
+                margin: 10px 0;
+            }
+            
+            .content {
+                font-size: 15px;
+                line-height: 32px;
+                color: $textColorLight;
+            }
+            
+            
+        }
+    }
+}
+
+.badge {
+    width: max-content;
+    font-size: 12px;
+    font-weight: 500;
+    user-select: none;
+    padding: 8px;
+    background-color: $themeColorLight;
+}
