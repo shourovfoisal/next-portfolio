@@ -10,8 +10,8 @@ const About = () => {
                 <Image fill style={{objectFit: 'cover'}} src={myImage} alt="Shourov Foisal" />
             </div>
             <div className={styles.about}>
-                <span className={styles.badge}>About</span>
-                <h2 className={styles.heading}>Full-Stack web developer from Dhaka, Bangladesh.</h2>
+                <span className="badge">About</span>
+                <h2 className={styles.title}>Full-Stack web developer from Dhaka, Bangladesh.</h2>
                 <p className={styles.content}>
                     I started my journey as a Computer Science and Engineering student back in 2014. Since 2017, I got deeply involved in Web Development. During my 5 years of learning journey, I learned about numerous web languages and frameworks. Of them, I love the Javascript based frameworks the most.
                 </p>

@@ -16,12 +16,14 @@ body {
 	// font-family: Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	color: $textColor;
-	// background-color: #ecf0f1;
-	// background-color: #fdcb6e;
-	// background-color: #fbc531;
-	// background-color: #f1c40f;
-	// background-color: $themeColorSubtle;
-	// background-color: aliceblue;
-	// background-color: #ffdc60;
-	// background-color: beige;
+}
+
+
+.badge {
+    width: max-content;
+    font-size: 12px;
+    font-weight: 500;
+    user-select: none;
+    padding: 8px;
+    background-color: $themeColorLight;
 }

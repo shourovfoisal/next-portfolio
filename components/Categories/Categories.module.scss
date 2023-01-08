@@ -1,0 +1,22 @@
+.categories {
+            
+            .categoryList {
+                display: flex;
+                height: 100%;
+                gap: 5px;
+                justify-content: center;
+                align-items: flex-end;
+                list-style: none;
+                font-size: 0.85rem;
+                font-weight: 700;
+                
+                .categoryItem {
+                    cursor: pointer;
+                    padding: 10px;
+                }
+                
+                .itemActive {
+                    color: #6ab04c;
+                }
+            }
+        }

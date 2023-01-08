@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.projects {
+    
+    .headingContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        
+        .heading {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            .title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                color: $textColor;
+                font-size: 2rem;
+                // margin: 10px 0 0 0;
+            }
+        }
+    }
+}

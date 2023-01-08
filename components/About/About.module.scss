@@ -25,7 +25,7 @@
             padding-right: 100px;
             gap: 10px;
             
-            .heading {
+            .title {
                 font-family: 'Poppins', sans-serif;
                 font-weight: 700;
                 color: $textColor;
@@ -42,13 +42,4 @@
             
         }
     }
-}
-
-.badge {
-    width: max-content;
-    font-size: 12px;
-    font-weight: 500;
-    user-select: none;
-    padding: 8px;
-    background-color: $themeColorLight;
 }
