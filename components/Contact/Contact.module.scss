@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.contactBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .contactForm {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        div {
+            display: flex;
+            gap: 10px;
+           
+            
+            input {
+                flex: 1;
+                border: 1px solid $grayColorSubtle;
+                outline: none;
+                padding: 10px;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            textarea {
+                flex: 1;
+                resize: none;
+                border: 1px solid $grayColorSubtle;
+                outline: none;
+                padding: 10px;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}
