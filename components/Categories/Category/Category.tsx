@@ -1,8 +1,8 @@
 import styles from "./Category.module.scss";
 
-const Category = ({id, name, setActiveCategory, activeCategory}: any) => {
+const Category = ({id, name, handleCategoryChange, activeCategory}: any) => {
   return (
-    <li onClick={() => setActiveCategory(id)} 
+    <li onClick={() => handleCategoryChange(id)} 
     className={`${styles.categoryItem} ${activeCategory === id ? styles.itemActive : null}`}>
         {name}
     </li>
