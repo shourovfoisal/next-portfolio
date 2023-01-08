@@ -3,6 +3,7 @@ import Image from "next/image";
 import About from "../components/About/About";
 import Hero from "../components/Hero"
 import Projects from "../components/Projects/Projects";
+import Stats from "../components/Stats/Stats";
 import styles from "../styles/Home.module.scss"
 
 
@@ -15,6 +16,7 @@ export default function Home() {
 			<div className={styles.background}></div>
 			<Hero />
 			<About />
+			<Stats />
 			<Projects />
 		</div>
 	);
