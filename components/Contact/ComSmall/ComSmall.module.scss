@@ -1,0 +1,14 @@
+
+.comSmall {
+    
+    display: flex;
+    gap: 10px;
+    
+    .comSmallIcon {
+        font-size: 2rem;
+    }
+    
+    .comSmallTexts {
+        flex: 1;
+    }
+}

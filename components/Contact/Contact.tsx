@@ -44,7 +44,7 @@ const Contact = () => {
                     <input type="text" placeholder="Subject" />
                 </div>
                 <div>
-                    <textarea name="contactText" id="contactText" cols={30} rows={10} placeholder="Message"></textarea>
+                    <textarea name="contactText" id="contactText" cols={30} rows={8} placeholder="Message"></textarea>
                 </div>
             </div>
         </section>
