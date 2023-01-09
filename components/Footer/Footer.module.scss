@@ -1,6 +1,9 @@
 
+@import '../../styles/variables';
+
 .footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 5rem 0;
     text-align: center;
+    background-color: $textColor;
+    color: #fff;
 }
