@@ -11,17 +11,21 @@ import styles from "../styles/Home.module.scss"
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
-			<Head>
-				<title>Home</title>
-			</Head>
-			<div className={styles.background}></div>
-			<Hero />
-			<About />
-			<Stats />
-			<Projects />
-			<Technologies />
-			<Contact />
-		</div>
+		<>
+			<div className={`${styles.container} ${styles.heroSection}`}>
+				<Head>
+					<title>Home</title>
+				</Head>
+				<div className={styles.background}></div>
+				<Hero />
+			</div>
+			<div className={`${styles.container}`}>
+				<About />
+				<Stats />
+				<Projects />
+				<Technologies />
+				<Contact />
+			</div>
+		</>
 	);
 }

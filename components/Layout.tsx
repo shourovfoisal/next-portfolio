@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import TopNav from "./TopNav";
 import styles from "./Layout.module.css";
+import Footer from "./Footer/Footer";
 
 const Layout = ({ children }: any) => {
 	return (
@@ -12,6 +13,7 @@ const Layout = ({ children }: any) => {
 			</Head>
 			<TopNav />
 			{children}
+			<Footer />
 		</>
 	);
 };
