@@ -1,0 +1,56 @@
+@import '../../../styles/variables';
+
+.technology {
+    
+    .technologyIcon {
+        width: fit-content;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #bbb;
+        transition: color 0.2s ease-in-out;
+        position: relative;
+        text-align: center;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -25px;
+            bottom: -20px;
+            left: -25px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            transition: border 0.2s ease-in-out;
+        }
+        
+        &:hover {
+            color: #fbc531;
+        }
+        
+        &:hover::after {
+            border: 1px solid #fbc531;
+        }
+        
+        span {
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -33px;
+            z-index: 1;
+            
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            background-color: #fbc531;
+            color: #fff;
+            white-space: nowrap;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+        }
+        
+        &:hover span {
+            opacity: 1;
+        }
+    }
+}

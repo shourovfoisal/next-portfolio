@@ -5,6 +5,7 @@ import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero"
 import Projects from "../components/Projects/Projects";
 import Stats from "../components/Stats/Stats";
+import Technologies from "../components/Technologies/Technologies";
 import styles from "../styles/Home.module.scss"
 
 
@@ -19,6 +20,7 @@ export default function Home() {
 			<About />
 			<Stats />
 			<Projects />
+			<Technologies />
 			<Contact />
 		</div>
 	);
