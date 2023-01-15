@@ -1,0 +1,9 @@
+.outerBox {
+    height: 300px;
+    
+    .innerBox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}

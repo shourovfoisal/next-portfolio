@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About/About";
+import BlogPosts from "../components/BlogPosts/BlogPosts";
 import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero"
 import Projects from "../components/Projects/Projects";
@@ -24,6 +25,7 @@ export default function Home() {
 				<Stats />
 				<Projects />
 				<Technologies />
+				<BlogPosts />
 				<Contact />
 			</div>
 		</>

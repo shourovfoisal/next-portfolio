@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.posts {
+    
+    .headingContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        
+        .heading {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            .title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                color: $textColor;
+                font-size: 2rem;
+                // margin: 10px 0 0 0;
+            }
+        }
+    }
+    
+    .itemsContainer {
+        margin-top: 2.5rem;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(4, minmax(300px, 1fr));
+        // grid-template-rows: repeat(2, 1fr);
+    }
+}
