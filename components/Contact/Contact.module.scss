@@ -1,5 +1,20 @@
 @import '../../styles/variables';
 
+@mixin inputContainer {
+    
+    flex: 1;
+    border: 1px solid $grayColorSubtle;
+    border-radius: 5px;
+    padding: 20px;
+    
+    input, textarea {
+        width: 100%;
+        outline: none;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
 .contactBox {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -7,7 +22,7 @@
     .contactInfo {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
         justify-content: center;
     }
     
@@ -17,28 +32,52 @@
         flex-direction: column;
         gap: 20px;
         
-        div {
+        .inputGroup {
             display: flex;
             gap: 10px;
             
-            input {
-                flex: 1;
-                border: 1px solid $grayColorSubtle;
-                border-radius: 5px;
-                outline: none;
-                padding: 15px;
-                font-family: 'Poppins', sans-serif;
-            }
-            
-            textarea {
-                flex: 1;
-                resize: none;
-                border: 1px solid $grayColorSubtle;
-                border-radius: 5px;
-                outline: none;
-                padding: 10px;
-                font-family: 'Poppins', sans-serif;
+            .inputContainer {
+                @include inputContainer;
             }
         }
+        
+        .validationGroup {
+            display: flex;
+            gap: 10px;
+            
+            p {
+                flex: 1;
+                font-size: 0.8rem;
+                margin-left: 10px;
+                color: crimson;
+            }
+        }
+        
+        .inputContainer {
+            @include inputContainer;
+        }
+        
+        .formMessage {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            
+            textarea {
+                height: 150px;
+                resize: none;
+            }
+        }
+        
+        button {
+                font-size: 1rem;
+                padding: 15px 25px;
+                border: 0;
+                outline: 0;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: $themeColor;
+                color: $textColor;
+                font-weight: 600;
+            }
     }
 }

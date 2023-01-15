@@ -1,8 +1,10 @@
+@import '../../../styles/variables';
+
 .categoryItem {
     cursor: pointer;
     padding: 10px;
 }
 
 .itemActive {
-    color: #6ab04c;
+    color: $themeSecondaryColor;
 }

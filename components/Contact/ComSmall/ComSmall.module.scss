@@ -1,11 +1,17 @@
+@import '../../../styles/variables';
 
 .comSmall {
     
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    border-left: 2px solid $grayColorSubtle;
     
     .comSmallIcon {
         font-size: 2rem;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .comSmallTexts {
