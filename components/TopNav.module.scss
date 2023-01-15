@@ -5,12 +5,17 @@
 // 	// background-blend-mode: multiply;
 // }
 
+.navWideBG {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	padding: 3rem 0;
+	z-index: 1;
+}
+
 .navContainer {
 	width: 1300px;
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	padding: 3rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	z-index: 1;

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../public/logo-original.png";
 import styles from "./TopNav.module.scss";
 import { IoSearch } from "react-icons/io5";
+import { useRouter } from "next/router";
 
 const TopNav = () => {
 	const [link, setLink] = useState(0);
@@ -23,9 +23,30 @@ const TopNav = () => {
 		fontWeight: "600",
 		// borderBottom: "4px solid #22b14c",
 	};
-
+	
+	const navWideBG = useRef<HTMLDivElement>(null);
+	
+	useEffect(() => {
+		window.onscroll = function() {
+			if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+				if(navWideBG.current) {
+					navWideBG.current.style.padding = "1rem 0";
+					navWideBG.current.style.backgroundColor = "#fff";
+					navWideBG.current.style.boxShadow = "0px 2px 2px 1px rgba(0, 0, 0, 0.1)";
+				}
+			} else {
+				if(navWideBG.current) {
+					navWideBG.current.style.padding = "3rem 0";
+					navWideBG.current.style.backgroundColor = "transparent";
+					navWideBG.current.style.boxShadow = "none";
+				}
+			}
+		}
+	}, []);
+	
 	return (
-		<div className={styles.navContainer}>
+		<div ref={navWideBG} className={styles.navWideBG}>
+			<div className={styles.navContainer}>
 			<div className="logo">
 				<Link href="/" className={styles.logo}>
 					My Portfolio.
@@ -68,6 +89,7 @@ const TopNav = () => {
 					</div> */}
 				</div>
 			</div>
+		</div>
 		</div>
 	);
 };
