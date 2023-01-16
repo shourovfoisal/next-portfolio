@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.scrollReminder {
+	position: fixed;
+	left: 6%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	transform: translateY(-50%);
+	
+	.scrollDashOne {
+		height: 50%;
+		border-left: 1px solid $grayColorSubtle;
+	}
+	
+	.scrollDashTwo {
+		height: 10%;
+		margin-top: 15px;
+		border-left: 1px solid $grayColorSubtle;
+	}
+	
+	.scrollText {
+		cursor: pointer;
+		display: list-item;
+		list-style-type: square;
+		margin-top: 15px;
+		font-size: 0.9rem;
+		font-weight: 600;
+		user-select: none;
+		color: $textColor;
+		writing-mode: vertical-lr;
+		transform: rotateZ(180deg);
+	}
+}
