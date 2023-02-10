@@ -13,7 +13,7 @@ import ScrollNav from "../components/ScrollNav/ScrollNav";
 export default function Home() {
 	return (
 		<div className="wrapper">
-			<ScrollNav />
+			{/* <ScrollNav /> */}
 			<div>
 				<Head>
 					<title>Home</title>
@@ -25,7 +25,9 @@ export default function Home() {
 				<About />
 				<Stats />
 				<Projects />
-				<Technologies />
+			</div>
+			<Technologies />
+			<div className="container">
 				<BlogPosts />
 				<Contact />
 			</div>

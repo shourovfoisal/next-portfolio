@@ -3,6 +3,7 @@ import React from "react";
 import TopNav from "./TopNav";
 import styles from "./Layout.module.css";
 import Footer from "./Footer/Footer";
+import Sidebar from "./Sidebar/Sidebar";
 
 const Layout = ({ children }: any) => {
 	return (

@@ -67,10 +67,10 @@
 
 .searchBox {
 	width: 50%;
-	padding: 15px 20px;
-	border: 2px solid #fbc531;
-	background-color: rgba(0, 0, 0, 0.4);
-	border-radius: 50px;
+	// border: 2px solid #fbc531;
+	
+	// background-color: rgba(0, 0, 0, 0.4);
+	// border-radius: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -81,13 +81,16 @@
 		outline: none;
 		font-weight: 600;
 		font-size: 1.05rem;
-		color: #fbc531;
-		caret-color: #fbc531;
+		color: #fff;
+		caret-color: #fff;
+		// color: #fbc531;
+		// caret-color: #fbc531;
 		background-color: transparent;
 		
 		&::placeholder {
 			font-weight: 600;
-			color: #fbc531;
+			color: #fff;
+			// color: #fbc531;
 			transition: opacity 200ms;
 		}
 		
@@ -99,6 +102,8 @@
 
 .searchInputContainer {
 	width: 100%;
+	padding: 10px 10px;
+	border-bottom: 2px solid #fff;
 }
 
 .searchIconContainer {

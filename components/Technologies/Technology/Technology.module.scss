@@ -1,5 +1,9 @@
 @import '../../../styles/variables';
 
+.wrapperStylings {
+    background: $textColor;
+}
+
 .technology {
     
     .technologyIcon {
@@ -42,7 +46,7 @@
             opacity: 0;
             transition: opacity 0.2s ease-in-out;
             background-color: #fbc531;
-            color: #fff;
+            color: $textColor;
             white-space: nowrap;
             padding: 5px;
             border-radius: 5px;

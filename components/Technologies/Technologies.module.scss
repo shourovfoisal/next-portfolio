@@ -1,8 +1,15 @@
 
+@import '../../styles/variables';
+
 .technologies {
+    
+    padding: 7rem 0;
+    background: $textColor;
     
     .technologiesContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        width: 1300px;
+        margin: 0 auto;
     }
 }

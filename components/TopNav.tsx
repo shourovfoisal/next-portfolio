@@ -32,7 +32,7 @@ const TopNav = () => {
 				if(navWideBG.current) {
 					navWideBG.current.style.padding = "1rem 0";
 					navWideBG.current.style.backgroundColor = "#fff";
-					navWideBG.current.style.boxShadow = "0px 2px 2px 1px rgba(0, 0, 0, 0.1)";
+					navWideBG.current.style.boxShadow = "0px 1px 1px 0px rgba(0, 0, 0, 0.1)";
 				}
 			} else {
 				if(navWideBG.current) {

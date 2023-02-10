@@ -7,9 +7,9 @@ const ScrollNav = () => {
         <div className={styles.scrollDashOne}></div>
         <div className={styles.scrollDashTwo}></div>
         
-        <div className={styles.scrollText}>
+        {/* <div className={styles.scrollText}>
             Scroll Down
-        </div>
+        </div> */}
     </div>
   )
 }
